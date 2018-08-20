@@ -11,7 +11,7 @@
      
       function playOK() {
         var playAudio = document.getElementById("anexoOK");
-        ; 
+         
 
         playAudio.play();
       }
