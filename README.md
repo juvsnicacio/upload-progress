@@ -1,2 +1,2 @@
 # upload-progress
-Upload de arquivos via formulário com AJAX e PHP
+Upload de arquivos via formulário HTML com eventlistener AJAX e PHP
