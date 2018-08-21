@@ -5,18 +5,21 @@
     <audio id="anexoOK"><source src="audio/anexoOK.mp3" type="audio/mp3" /></audio>
     <audio id="anexoRM"><source src="audio/anexoRM.mp3" type="audio/mp3" /></audio>
     <audio loop id="anexoBip"><source src="audio/bip.mp3" type="audio/mp3" /></audio>
-     
+    <audio id="send"><source src="audio/enviado.mp3" type="audio/mp3" /></audio>
+
      
     <script type="text/javascript">
      
       function playOK() {
         var playAudio = document.getElementById("anexoOK");
-         
-
         playAudio.play();
       }
       function playRM() {
         var playAudio = document.getElementById("anexoRM");
+        playAudio.play();
+      }
+      function playSend() {
+        var playAudio = document.getElementById("send");
         playAudio.play();
       }
       function playLoading(){
@@ -91,7 +94,7 @@
         }
   
         else {
-        document.getElementById('progress').innerHTML = 'unable to compute';
+          document.getElementById('progress').innerHTML = 'unable to compute';
   
         }
   
@@ -100,6 +103,7 @@
       function uploadComplete(evt) {
         //  audio para fim de processo;
         stopLoading();
+        playSend();
        
       }
   
